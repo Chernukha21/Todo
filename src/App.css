@@ -1,0 +1,50 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+    overflow: auto;
+}
+
+.App__Container {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    flex-grow: 1;
+    background-color: rgb(228 228 231);
+}
+
+.App__Main {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    margin-top: 24px;
+    max-width: 500px;
+    flex-grow: 1;
+    gap: 16px;
+}
+.App__Toolbar {
+    background-color: rgb(31 41 55);
+}
+
+.App__Add_Form {
+    display: flex;
+    gap: 16px;
+    padding: 8px;
+    justify-content: center;
+}
+
+.App__TodoList {
+    align-self: stretch;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.App__TodoItemText--Completed {
+    color: #757575;
+    text-decoration: line-through;
+}
+
+.App__Statistics {
+    text-align: center;
+}
