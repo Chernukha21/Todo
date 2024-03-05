@@ -60,7 +60,7 @@ function App () {
           >
             <TextField
               type="text"
-              label="title of new todo"
+              label={!todos.length > 0 ? `Add some todo` : `Title for another todo`}
               value={text}
               onChange={(event) => setText(event.target.value)}
             />
@@ -74,7 +74,7 @@ function App () {
             <Button variant="outlined" disabled={currentFilter === 'completed'} onClick={() => handleChangeFilter('completed')}>Completed</Button>
           </div>
           <List className="App__TodoList">
-            {count >= 0 && todos.map((todo) => (
+            {todos.length > 0 && todos.map((todo) => (
               <ListItem
                 key={todo.id}
                 disablePadding={true}

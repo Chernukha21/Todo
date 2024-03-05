@@ -3,7 +3,6 @@ import {createSlice} from '@reduxjs/toolkit';
 const todoSlice = createSlice({
   name: "todos",
   initialState: {
-    num: 0,
     todos: [],
     filterBy: 'all',
   },
